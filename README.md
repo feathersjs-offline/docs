@@ -1,11 +1,6 @@
 
-# VuePressOnGithubPageTemplate
+# Welcome to FeathersJS Offline-first documentation
 
-This is VuePress template for GitHub Pages.
-Just you need these 4 steps, and then, publish!
-
-これはVuePressで作ったページをGitHubで公開する雛形です。  
-4ステップでページを公開しましょう！
-
-[More detail](https://fruitriin.github.io/VuePressOnGithubPageTemplate/)
+This is the GitHup Pages repository for the documentation. To view it, you should hurry to click
+[this documentation link](https://feathersjs-offline.github.io/docs/)
 
