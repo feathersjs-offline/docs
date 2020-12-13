@@ -4,7 +4,7 @@ sidebar: false
 ---
 
 
-<img style="display:block; width: 400px; margin: 0 auto; margin-top: 4em; margin-bottom: 2em;" src="/img/feathers-offline-first.png" alt="FeathersJS Offline logo" />
+<img style="display:block; width: 400px; margin: 0 auto; margin-top: 4em; margin-bottom: 2em;" src=".resources/feathers-offline-first.png" alt="FeathersJS Offline logo" />
 
 
 > Welcome to the FeathersJS real-time offline-first documentation! We have included some of the introductory documentation from the Feathers offical documentation to minimize you jumping back and forth between documents. Otherwise we link to the Feathers documentation whenever necessary.
