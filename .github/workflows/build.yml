@@ -19,7 +19,7 @@ jobs:
     - name: Set identity
       run: git config user.email "michael@hillerstrom.name" && git config user.name "Michael Hillerström"
     - name: Commit changes
-      run: cd docs/.vuepress/dist && git add -A && git commit -m 'deploy for GitHub Pages'
+      run: cd docs/.vuepress/dist && git init && git add -A && git commit -m 'deploy for GitHub Pages'
     #- name: Push changes to repository
     #  run: git push -f git@github.com:feathersjs-offline/docs.git master:gh-pages
     - name: Deploy
