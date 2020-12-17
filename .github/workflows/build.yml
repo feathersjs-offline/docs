@@ -16,6 +16,8 @@ jobs:
       run: yarn
     - name: Build docs
       run: yarn docs:build
+    - name: Set identity
+      run: git config user.email "michael@hillerstrom.name" && git config user.name "Michael Hillerström"
     - name: Commit changes
       run: cd docs/.vuepress/dist && git add -A && git commit -m 'deploy for GitHub Pages'
     #- name: Push changes to repository
