@@ -14,6 +14,6 @@ deploy:
   cleanup: false
   local_dir: docs/.vuepress/dist
   keep_history: false
-  token: ${{ secrets.GIT_TOKEN }}
+  token: ${{secrets.GIT_TOKEN}}
   on:
     branch: master
