@@ -14,7 +14,7 @@ This api describes three wrappers first the server wrapper, `realtimeWrapper,` a
 
 [@feathersjs-offline/server](https://github.com/feathersjs-offline/owndata-ownnet/tree/main/packages/server)is a database service adapter that extends any Feathers CRUD database adapter and helps to enable both own-data and own-net (as implemented in [@feathersjs-offline/client](https://github.com/feathersjs-offline/owndata-ownnet/tree/main/packages/client) for the service chosen.
 
-```
+``` sh
 $ npm install --save @feathersjs-offline/server
 ```
 
@@ -26,7 +26,7 @@ Important: `@feathersjs-offline` extends any [Feathers Common database adapter A
 
 Returns a new service instance initialized with the given options.
 
-```
+``` js
 const ls-service = require('feathers-localstorage');
 const { realtimeWrapper } = require('@feathersjs-offline/server');
 
@@ -49,7 +49,7 @@ The services under `realtimeWrapper` control all implement the standard service 
 ### Example
 Here is an example of a Feathers server with a messages in-memory service that supports pagination:
 
-```
+``` sh
 $ npm install @feathersjs/feathers @feathersjs/express @feathersjs/socketio @feathersjs/errors feathers-memory @feathersjs-offline/server
 ````
 
@@ -142,7 +142,7 @@ async app.service('/messages').getEntries(params)
   });
 ```
 
-Note: getEntries retrieves all resources (fulfilling the criteria of params.query) and always return an array.
+Note: `getEntries` retrieves all resources (fulfilling the criteria of `params.query`) and always return an array.
 
 #### .sync(bAll)
 `service.sync(bAll) -> Promise` - Synchronize local data with server. if `bAll` is `true` synchronization is done beginning from BOT (Beginning Of Time). If `bAll` is `false` synchronization will be done from the newest possible timestamp (determined from resources in local DB). Synchronization will only be performed if no active operations involving the server are running.
@@ -153,8 +153,6 @@ async app.service('/messages').getEntries(params)
     console.log(`entries = ${JSON.stringify(result)}`);
   });
 ```
-
-Note: `getEntries` retrieves all resources (fulfilling the criteria of `params.query`) and always return an array.
 
 #### Internal service handles
 Internal service handles are useful for receiving messages whenever a CRUD operation have been successfully performed. To receive a message you first have to register a message handler for the relevant service handle. You can register message handlers for the messages `created,` `updated,` `patched,` and `removed`. The available service handles are:
@@ -218,6 +216,7 @@ See the [clients](https://docs.feathersjs.com/api/client.html) chapter for more 
 ``` sh
 $ npm install @feathersjs/feathers feathers-localstorage @feathersjs-offline/owndata --save
 ```
+
 ``` js
 import React from 'react-native';
 import feathers from '@feathersjs/feathers';
@@ -292,8 +291,6 @@ async app.service('/messages').getEntries(params)
     console.log(`entries = ${JSON.stringify(result)}`);
   });
 ```
-
-Note: `getEntries` retrieves all resources (fulfilling the criteria of `params.query`) and always return an array.
 
 ### Internal service handles
 Internal service handles are useful for receiving messages whenever a CRUD operation have been successfully performed. To receive a message tou first have to register a message handler for the relevant service handle. You can register message handlers for the messages `created,` `updated,` `patched,` and `removed.` The available service handles are
