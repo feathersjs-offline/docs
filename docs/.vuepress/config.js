@@ -1,7 +1,7 @@
 module.exports = {
   title: 'FeathersJS Offline-first',
   description: 'A REST and real-time API layer for modern applications',
-  base: '/tmpdoc/',
+  base: '/docs/',
   thirdPartyComponents: {
     fontAwesomeIcons:{
         regular:['lightbulb'],  // Regular font awesome icon keys here
