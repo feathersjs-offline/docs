@@ -7,32 +7,36 @@ on:
     branches:
     - master
 jobs:
-  build:
-    name: Build
+  checkout:
     runs-on: ubuntu-latest
+    name: Build
     steps:
     - uses: actions/checkout@v2
+  build:
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
     - name: Prepare NodeJS
       run: yarn
     - name: Build docs
-      run: yarn docs:build
-    - name: Set identity email
-      run: git config --global user.email "michael@hillerstrom.name"
-    - name: Set identity name
-      run: git config --global user.name "Michael Hillerström"
-    - name: Go to dist
-      run: cd docs/.vuepress/dist
-    - name: Initialize git
-      run: git init
-    - name: Add changes
-      run: git add -A
-    - name: Commit changes
-      run: git commit -m 'deploy for GitHub Pages'
+      run: |
+          yarn docs:build
+          # cd docs/.vuepress/dist
+          # git init
+          # git add -A
+          # git commit -m 'deploy for GitHub Pages'
     #- name: Push changes to repository
     #  run: git push -f git@github.com:feathersjs-offline/docs.git master:gh-pages
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
     - name: Deploy
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GIT_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/.vuepress/dist
+        user_name: "mhillerstrom"
+        user_email: "michael@hillerstrom.name"
+        commit_message: "deploy for GitHub Pages"
