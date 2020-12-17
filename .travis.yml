@@ -1,4 +1,7 @@
 language: node_js
+os:
+  - linux
+dist: xenial
 node_js:
   - lts/*
 install:
@@ -7,9 +10,10 @@ script:
   - yarn docs:build # npm run docs:build
 deploy:
   provider: pages
-  skip_cleanup: true
+  strategy: git
+  cleanup: false
   local_dir: docs/.vuepress/dist
-  keep_history: true
-  github_token: $GIT_TOKEN
+  keep_history: false
+  token: ${{ secrets.GIT_TOKEN }}
   on:
     branch: master
