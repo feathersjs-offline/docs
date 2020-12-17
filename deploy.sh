@@ -18,6 +18,6 @@ git commit -m 'deploy for github pages'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 #git push -f git@github.com:$GITHUB_USERNAME/$REPOSITORY.git master:gh-pages
-git push -f https://github.com/$GITHUB_USERNAME/$REPOSITORY.git master:gh-pages
+git push -f git@github.com:$GITHUB_USERNAME/$REPOSITORY.git master:gh-pages
 
 cd -

@@ -4,7 +4,7 @@ Welcome to the FeathersJS Offline guides! This is the place to find all the reso
 
 Much of the information herein is adopted directly from the [Feathers Guides](https://docs.feathersjs.com/guides). Please refer to this when seeking information beyond the scope of these guides.
 
-<img style="margin: 2em 0;" src="/img/key-image-horizontal.png" alt="Feathers key image">
+<img style="margin: 2em 0;" :src="$withBase('/img/key-image-horizontal.png')" alt="Feathers key image">
 
 ## The FeathersJS Offline guide
 

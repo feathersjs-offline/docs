@@ -359,4 +359,4 @@ The [feathersjs/feathers-chat-ts](https://github.com/feathersjs/feathers-chat-ts
 
 ## What's next?
 
-In the final chapter, we'll look at [how to write automated tests for our API](./testing.md).
+In the next chapter, we'll look at the main feature [adding offline-first support](./offline-first.md).
