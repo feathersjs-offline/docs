@@ -1,56 +1,178 @@
-//to use .env
-require('dotenv').config();
-
-//create sidebar
-const fs = require('fs');
-const path = require('path');
-
-const dirpath = "./docs";
-//list to directories for subtree
-const dirs = fs.readdirSync(dirpath).filter((f) => {
-    //ignore directory start with .
-    if(f.charAt(0) === ".") return false;
-
-    return fs.existsSync(dirpath + "/" + f) && fs.statSync(dirpath + "/" + f).isDirectory();
-});
-//list to under the docs files
-const files = fs.readdirSync(dirpath).filter((f) => {
-    //READNE.md and index.md skip
-    if(f === "README.md" || f === "index.md") return false;
-    //ignore not .md and .html files
-    if(!( f.endsWith(".md") || f.endsWith(".html"))) return false;
-    return fs.existsSync(dirpath + "/" + f) && fs.statSync(dirpath + "/" + f).isFile();
-});
-
-//create sidebar array from dirs and files
-const sidebarArray = ["/"].concat(dirs.map((dir) => {
-    return {
-        title: dir,
-        collapsable: true,
-        children: fs.readdirSync(dirpath + "/" + dir).map((childDir) => {
-            return  "/" + dir + "/" + childDir
-        })
-    }
-})).concat(files.map((file) => {
-    return  file;
-})).sort((a, b) => {
-    let aName = typeof a === "string" ? a : a.title;
-    let bName = typeof b === "string" ? b : b.title;
-    return aName > bName ? 1 : -1;
-});
-
-// configure these modules if you
 module.exports = {
-    title: "VuePress Generated",
-    //description : "use for meta description",
-    base: "/" + process.env.REPOSITORY + "/",
-    config: (md) => {
-        md.options.linkify = true
-    },
-    themeConfig: {
-        sidebar: sidebarArray
+  title: 'FeathersJS Offline-first',
+  description: 'A REST and real-time API layer for modern applications',
+  base: '/tmpdoc/',
+  thirdPartyComponents: {
+    fontAwesomeIcons:{
+        regular:['lightbulb'],  // Regular font awesome icon keys here
+        solid:[ 'thumbs-up']    // Solid font awesome icon keys here
     }
+  },
+  themeConfig: {
+    algolia: {
+      apiKey: '2835d290e600f7fb583e2b61a74032ba',
+      indexName: 'feathersjs'
+    },
+    logo: '/img/feathers-offline-first.png',
+    repo: 'feathersjs-offline/docs',
+    docsRepo: 'feathersjs-offline/docs',
+    docsDir: 'docs',
+    docsBranch: 'master',
+    editLinks: true,
+    sidebarDepth: 2,
+    sidebar: {
+      '/guides/': [{
+        title: 'The FeathersJS Offline-first guide',
+        collapsable: false,
+        children: [
+          'basics/setup.md',
+          'basics/starting.md',
+          'basics/generator.md',
+          'basics/services.md',
+          'basics/hooks.md',
+          'basics/authentication.md',
+          'basics/frontend.md',
+          'basics/offline-first.md',
+          'basics/implementation.md',
+          'basics/testing.md'
+        ]
+      }, 'frameworks.md', 'security.md', 'migrating.md'],
+      '/help/': [{
+        title: 'Help',
+        collapsable: false,
+        children: [
+          '/help/',
+          '/help/faq.md'
+        ]
+      }],
+      '/api/': [{
+        title: 'Core',
+        collapsable: false,
+        children: [
+          'application.md',
+          'services.md',
+          'hooks.md',
+          'events.md',
+          'errors.md',
+          'configuration.md'
+        ]
+      }, {
+        title: 'Transports',
+        collapsable: false,
+        children: [
+          'express.md',
+          'socketio.md',
+          'primus.md',
+          'channels.md'
+        ]
+      }, {
+        title: 'Client',
+        collapsable: false,
+        children: [
+          'client.md',
+          'client/rest.md',
+          'client/socketio.md',
+          'client/primus.md'
+        ]
+      }, {
+        title: 'Authentication',
+        collapsable: false,
+        children: [
+          'authentication/',
+          'authentication/service.md',
+          'authentication/strategy.md',
+          'authentication/hook.md',
+          'authentication/jwt.md',
+          'authentication/local.md',
+          'authentication/oauth.md',
+          'authentication/client.md'
+        ]
+      }, {
+        title: 'Databases',
+        collapsable: false,
+        children: [
+          'databases/adapters.md',
+          'databases/common.md',
+          'databases/querying.md'
+        ],
+        title: 'Offline-first',
+        collapsable: false,
+        children: [
+          'offline-api.md'
+        ],
+    }],
+      '/cookbook/': [{
+        title: 'General',
+        collapsable: false,
+        children: [
+          'general/scaling.md'
+        ]
+      }, {
+        title: 'Authentication',
+        collapsable: false,
+        children: [
+          'authentication/anonymous.md',
+          'authentication/auth0.md',
+          'authentication/facebook.md',
+          'authentication/google.md',
+          'authentication/firebase.md',
+          'authentication/_discord.md',
+          'authentication/stateless.md',
+          'authentication/revoke-jwt.md'
+        ]
+      }, {
+        title: 'Express',
+        collapsable: false,
+        children: [
+          'express/file-uploading.md',
+          'express/view-engine.md'
+        ]
+      }, {
+        title: 'Deployment',
+        collapsable: false,
+        children: [
+          'deploy/docker.md'
+        ]
+      }]
+    },
+    nav: [
+      { text: 'Guides', link: '/guides/' },
+      { text: 'API', link: '/api/' },
+      { text: 'Cookbook', link: '/cookbook/' },
+      { text: 'Help', link: '/help/' },
+      {
+        text: 'Ecosystem',
+        items: [
+        {
+          text: 'Feathersjs (v4 Crow, current)',
+          link: 'https://docs.feathersjs.com/'
+        },
+        {
+          text: 'Awesome Feathersjs',
+          link: 'https://github.com/feathersjs/awesome-feathersjs'
+        }, {
+          text: 'YouTube Playlist',
+          link: 'https://www.youtube.com/playlist?list=PLwSdIiqnDlf_lb5y1liQK2OW5daXYgKOe'
+        }, {
+          text: 'Feathers VueX',
+          link: 'https://vuex.feathersjs.com/'
+        }, {
+          text: 'Common Hooks',
+          link: 'https://hooks-common.feathersjs.com/'
+        }, {
+          text: 'Other versions',
+          items: [{
+            text: 'Dove (v5, next)',
+            link: 'https://dove.docs.feathersjs.com/'
+          }, {
+            text: 'Buzzard (v3)',
+            link: 'https://buzzard.docs.feathersjs.com/'
+          }, {
+            text: 'Auk (v2)',
+            link: 'https://auk.docs.feathersjs.com/'
+          }]
+        }]
+      }
+    ]
+  }
 };
-
-//check for sidebar
-console.log(sidebarArray);

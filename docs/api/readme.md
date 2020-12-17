@@ -56,3 +56,9 @@ Feathers common database adapter API and querying mechanism
 * [Adapters](databases/adapters.md) - A list of supported database adapters
 * [Common API](databases/common.md) - Database adapter common initialization and configuration API
 * [Querying](databases/querying.md) - The common querying mechanism
+
+## Offline-first
+
+Feathers Offline-first mechanism
+
+* [Offline-first](offline-api.md) - The `own-data` / `own-net` offline-first wrapper
