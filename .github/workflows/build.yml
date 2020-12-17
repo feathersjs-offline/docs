@@ -16,10 +16,18 @@ jobs:
       run: yarn
     - name: Build docs
       run: yarn docs:build
-    - name: Set identity
-      run: git config user.email "michael@hillerstrom.name" && git config user.name "Michael Hillerström"
+    - name: Set identity email
+      run: git config --global user.email "michael@hillerstrom.name"
+    - name: Set identity name
+      run: git config --global user.name "Michael Hillerström"
+    - name: Go to dist
+      run: cd docs/.vuepress/dist
+    - name: Initialize git
+      run: git init
+    - name: Add changes
+      run: git add -A
     - name: Commit changes
-      run: cd docs/.vuepress/dist && git init && git add -A && git commit -m 'deploy for GitHub Pages'
+      run: git commit -m 'deploy for GitHub Pages'
     #- name: Push changes to repository
     #  run: git push -f git@github.com:feathersjs-offline/docs.git master:gh-pages
     - name: Deploy
