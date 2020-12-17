@@ -36,3 +36,4 @@ jobs:
         user_name: "mhillerstrom"
         user_email: "michael@hillerstrom.name"
         commit_message: "deploy for GitHub Pages"
+        keep_files: true
