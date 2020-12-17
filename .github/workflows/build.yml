@@ -12,10 +12,6 @@ jobs:
     name: Build
     steps:
     - uses: actions/checkout@v2
-  build:
-    runs-on: ubuntu-latest
-    needs: checkout
-    steps:
     - name: Prepare NodeJS
       run: yarn
     - name: Build docs
