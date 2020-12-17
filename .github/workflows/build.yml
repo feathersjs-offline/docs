@@ -23,10 +23,6 @@ jobs:
           # git commit -m 'deploy for GitHub Pages'
     #- name: Push changes to repository
     #  run: git push -f git@github.com:feathersjs-offline/docs.git master:gh-pages
-  deploy:
-    runs-on: ubuntu-latest
-    needs: checkout
-    steps:
     - name: Deploy
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
       uses: peaceiris/actions-gh-pages@v3
