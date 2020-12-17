@@ -32,7 +32,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/.vuepress/dist
+        publish_dir: ./.vuepress/dist
         user_name: "mhillerstrom"
         user_email: "michael@hillerstrom.name"
         commit_message: "deploy for GitHub Pages"
