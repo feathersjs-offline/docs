@@ -54,11 +54,11 @@ realtimeWrapper(app, 'messages', {});
 
 Now restart the server and refresh the client in the browser and that's it! From now on, all activity on the `messages` service on the client will be handled in a client-first server-later (possibly very shortly after) manner. What's more, whenever the client has a valid connection to the server it will synchronize all changes made on the `message` service while offline - regardless of the origin of the changes.
 
-Synchronization is done in a `newest change wins` manner. Changing the _same_ (same `uuid`) item on three different offline devices makes the latest change> eventually become the winner.
+Synchronization is done in a `newest change wins` manner. Changing the _same_ (same `uuid`) item on three different offline devices makes the latest change eventually become the winner.
 
 Items removed from the server cannot be revived (this is because we make a '_soft-delete_' on the server to be able to ensure synchronization can be successful at all times).
 
-> __Note:__ For this to work you must ensure the service implements the date fields `updatedAt`, `onServerAt`, and the id field `uuid`. The wrapper will do all handling of the fields behind the scenes. (The `uuid` do not _have_ to be the id field but it is considered good practice).
+> __Note:__ For this to work you must ensure the service implements the date fields `updatedAt,` `onServerAt,` and the id field `uuid.` The wrapper will do all handling of the fields behind the scenes. (The `uuid` do not _have_ to be the id field but it is considered good practice).
 > 
 > For MongoDB you do not have to worry, but for schema-centric DBs you have to ensure your schema include these fields.
 
