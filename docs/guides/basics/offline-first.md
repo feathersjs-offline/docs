@@ -78,6 +78,10 @@ Furthermore, you need to decide how frequent you want the automatic synchronizat
 
 Last, you might consider, if your application needs to synchronize outside the automatic synchronization and if that's the case you have to make sure you activate the method (with the right options, see [FeathersJS Offline-first API](../../api/offline-api.md)).
 
+::: danger IMPORTANT: &nbsp;&nbsp;At the time of writing attaching listeners to wrapped services behaves differently depending on which transport protocol you are using. Therefore, until further notice, you are advised to attach listeners to both the wrapped service and its `.remote` counterpart (the original service).
+&nbsp;
+:::
+
 > **Note:** The realtime wrappers are meant to be used as wrappers for database adapters and will therefore not accept `app.service(<path>).update(id, ...)` with `id === null`. You have to use `patch` to alter several documents at the same time.
 
 > **Tip:** You should use the `own-data` / `own-net` wrappers with some care, as they consume parts of the `localStorage` which in browsers is not an unlimited resource pool...
