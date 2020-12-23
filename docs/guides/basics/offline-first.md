@@ -65,7 +65,7 @@ Items removed from the server cannot be revived (this is because we make a '_sof
 > __Note:__ If you want to know more about _how_ the wrappers work read [own-data/own-net implementation](./implementation.md).
 
 
-# Come-on, it can't be that simple!
+## Come-on, it can't be that simple!
 Well, it almost is due to Feathers clever adapter implementation. All CRUD service adapters, that are able to pass the adapterTests, should be able work seamlessly with the realtime wrappers. But, you have to choose the wrapper to use based on your needs:
 
 My need	| own-data | own-net |Comment
@@ -83,6 +83,6 @@ Last, you might consider, if your application needs to synchronize outside the a
 > **Tip:** You should use the `own-data` / `own-net` wrappers with some care, as they consume parts of the `localStorage` which in browsers is not an unlimited resource pool...
 
 
-# What's next?
+## What's next?
 
 In the final chapter, we'll look at [how to write automated tests for our API](./testing.md). Alternatively, you can digress a read about how Feathers Offline-first has been [implemented](./implementation.md).
