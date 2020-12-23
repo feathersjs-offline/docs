@@ -1,13 +1,13 @@
 # How is own-data/own-net implemented?
 The following is a high-level illustration of the `realtimeWrapper,` `owndataWrapper,` and `ownnetWrapper`:
 
-<div style="text-align: center"><img width="400" :src="$withBase('/img/wrapper-overview.svg')" alt="FeathersJS Offline-first wrapper overview"></div>
+<div style="text-align: center"><img width="400" src="./assets/wrapper-overview.svg" alt="FeathersJS Offline-first wrapper overview"></div>
 
 As can be gleaned from this, the `realtimeWrapper` wraps functionality around all of the CRUD methods of the service. This is mainly to set `onServerAt` to determine the exact time this version of the item in question hit the server and when needed, `deletedAt,` to indicate the exact time when the item in question was deleted from the server. Both of these are crucial for the synchronization with the clients.
 
 The client-side is either wrapped with `owndataWrapper` or `ownnetWrapper` which is are little more complex than the `realtimeWrapper` as you can get an impression of below.
 
-<div style="text-align: center"><img width="400" :src="$withBase('/img/feathersjs-offline-crud-principle.svg')" alt="FeathersJS Offline-first CRUD principle"></div>
+<div style="text-align: center"><img width="400" src="./assets/feathersjs-offline-crud-principle.svg" alt="FeathersJS Offline-first CRUD principle"></div>
 
 On the client we wrap the CRUD methods to set the `onServerAt` to BOT (Beginning Of Time) to indicate that this version of the item has not been on the server yet (which is done in the housekeeping part). We also need to have a way of returning the result of any CRUD method immediately - even if we are not connected to the server - and we need to queue all operations on the client just in case we are not connected. This is done in the _Optimistic op_ part. The queue is essential for updating the server correctly whenever we connect to it. So, to enable this behaviour we make use of two local DB's (implemented as [feathers-localstorage](https://github.com/feathersjs-ecosystem/feathers-localstorage)) per service handled with `own-data` / `own-net` principle.
 

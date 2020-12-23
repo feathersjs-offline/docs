@@ -1,0 +1,73 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="302" width="402" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#DDDDDD" id="svg_78" height="194.9192" width="117.13894" y="101.01395" x="18.66892" stroke-width="1.5" fill="#DDDDDD"/>
+  <rect stroke="#DDDDDD" id="svg_76" height="199.60476" width="207.10166" y="21.82803" x="182.19487" stroke-width="1.5" fill="#DDDDDD"/>
+  <rect stroke="#000" id="svg_1" height="22.00045" width="64.50083" y="13.45361" x="15.50064" stroke-width="1.5" fill="#fff"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_3" y="29.22762" x="21.93868" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">CRUD op</text>
+  <rect stroke="#BBBBBB" id="svg_4" height="18.99983" width="82.99927" y="60.72735" x="30.00149" stroke-width="1.5" fill="#DDDDDD"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_5" y="73.72723" x="33.00146" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Housekeeping</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_6" y2="59.22736" x2="52.50129" y1="37.22756" x1="52.50129" stroke-width="1.5" stroke="#482816" fill="none"/>
+  <rect stroke="#FFAFCC" stroke-dasharray="5,5" id="svg_8" height="18.99983" width="82.99927" y="106.72695" x="31.50148" stroke-width="1.5" fill="#FFA9A2"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_9" y="120.72682" x="34.00146" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#CC7C65">Semafore</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_11" y2="104.22697" x2="52.50129" y1="82.22716" x1="52.50129" stroke-width="1.5" stroke="#482816" fill="none"/>
+  <rect stroke="#6D97AB" id="svg_13" height="18.99983" width="82.99927" y="152.72655" x="31.50148" stroke-width="1.5" fill="#9ACEE6"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_14" y="166.22642" x="34.50145" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#000000">queue op</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_15" y2="150.22657" x2="52.50129" y1="128.22676" x1="52.50129" stroke-width="1.5" stroke="#482816" fill="none"/>
+  <rect stroke="#6D97AB" id="svg_17" height="18.99983" width="82.99927" y="199.22614" x="31.50148" stroke-width="1.5" fill="#9ACEE6"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_19" y2="196.22617" x2="52.50129" y1="174.22636" x1="52.50129" stroke-width="1.5" stroke="#619E73" fill="none"/>
+  <line stroke-dasharray="5,5" stroke-linecap="null" stroke-linejoin="null" id="svg_20" y2="229.22638" x2="141.16544" y1="229.72638" x1="54.6662" stroke-width="1.5" stroke="#619E73" fill="none"/>
+  <line stroke="#619E73" stroke-linecap="null" stroke-linejoin="null" id="svg_21" y2="227.78887" x2="142.00051" y1="48.72745" x1="142.50051" stroke-dasharray="5,5" stroke-width="1.5" fill="none"/>
+  <rect stroke="#559E84" stroke-dasharray="5,5" id="svg_25" height="18.99983" width="82.99927" y="245.22574" x="31.50148" stroke-width="1.5" fill="#8CD79F"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_26" y="213.22601" x="34.00146" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#000000">Local DB op</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_27" y2="242.72576" x2="53.00129" y1="220.72595" x1="53.00129" stroke-width="1.5" stroke="#619E73" fill="none"/>
+  <line stroke="#482816" stroke-linecap="null" stroke-linejoin="null" id="svg_31" y2="276.72546" x2="53.00129" y1="265.72555" x1="53.00129" stroke-width="1.5" fill="none"/>
+  <ellipse ry="5.24995" rx="8.49993" id="svg_33" cy="283.9754" cx="53.00129" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#482816" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_18" y="259.22561" x="34.00146" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#619E73">Semafore</text>
+  <rect stroke="#6D97AB" id="svg_35" height="18.99983" width="82.99927" y="37.72755" x="189.1857" stroke-width="1.5" fill="#9ACEE6"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_37" y2="81.22717" x2="210.18552" y1="59.22736" x1="210.18552" stroke-width="1.5" stroke="#482816" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_38" y="51.22742" x="191.68568" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#000000">Remote DB op</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_39" y2="81.22717" x2="210.18552" y1="59.22736" x1="210.18552" stroke-width="1.5" stroke="#729C62" fill="none"/>
+  <rect stroke="#619E73" id="svg_40" height="18.99983" width="82.99927" y="83.22716" x="190.1857" stroke-width="1.5" fill="#8CD79F"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_41" y2="126.72677" x2="211.18551" y1="104.72697" x1="211.18551" stroke-width="1.5" stroke="#482816" fill="none"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_42" y="96.72703" x="193.18567" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#000000">Local DB fix</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_43" y2="126.72677" x2="211.18551" y1="104.72697" x1="211.18551" stroke-width="1.5" stroke="#729C62" fill="none"/>
+  <rect stroke="#6D97AB" id="svg_46" height="18.99983" width="82.99927" y="83.22716" x="190.1857" stroke-width="1.5" fill="#9ACEE6"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_48" y="96.72703" x="193.18567" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#000000">Local DB fix</text>
+  <rect stroke="#6D97AB" id="svg_52" height="18.99983" width="82.99927" y="128.72676" x="190.68569" stroke-width="1.5" fill="#9ACEE6"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_54" y="142.22663" x="193.68566" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#000000">dequeue op</text>
+  <line stroke="#482816" stroke-linecap="null" stroke-linejoin="null" id="svg_56" y2="160.22648" x2="211.18551" y1="149.22657" x1="211.18551" stroke-width="1.5" fill="none"/>
+  <ellipse ry="5.24995" rx="8.49993" id="svg_57" cy="166.97642" cx="211.18551" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#482816" fill="none"/>
+  <line stroke="#CC7C65" stroke-linecap="null" stroke-linejoin="null" id="svg_58" y2="41.00005" x2="320.18455" y1="40.72752" x1="274.18496" fill-opacity="null" stroke-width="1.5" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="9" id="svg_59" y="39.22754" x="277.18493" fill-opacity="null" stroke-width="0" stroke="#CC7C65" fill="#C48157">Timeout</text>
+  <ellipse ry="5.24995" rx="8.49993" id="svg_60" cy="40.97752" cx="330.7159" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#482816" fill="none"/>
+  <line stroke="#CC7C65" stroke-linecap="null" stroke-linejoin="null" id="svg_61" y2="53.49994" x2="320.68454" y1="53.22742" x1="274.43498" fill-opacity="null" stroke-width="1.5" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="9" id="svg_62" y="51.72743" x="277.18493" fill-opacity="null" stroke-width="0" stroke="#CC7C65" fill="#C48157">Error</text>
+  <line stroke="#CC7C65" transform="rotate(89.66056823730469 319.86389160156244,79.68802642822268) " stroke-linecap="null" stroke-linejoin="null" id="svg_63" y2="79.8243" x2="346.007" y1="79.55178" x1="293.72057" fill-opacity="null" stroke-width="1.5" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="9" id="svg_64" y="179.97699" x="144.73149" stroke-width="0" stroke="#8CD79F" fill="#619E73">(async)</text>
+  <rect stroke="#6D97AB" id="svg_65" height="18.99983" width="82.99927" y="107.27664" x="299.04683" stroke-width="1.5" fill="#9ACEE6"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_66" y="120.77651" x="302.0468" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#000000">dequeue op</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_67" y2="150.3077" x2="320.04664" y1="128.30789" x1="320.04664" stroke-width="1.5" stroke="#619E73" fill="none"/>
+  <rect stroke="#619E73" id="svg_68" height="18.99983" width="82.99927" y="152.10485" x="299.35919" stroke-width="1.5" fill="#8CD79F"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_69" y="165.60472" x="302.35916" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#000000">Local DB fix</text>
+  <rect stroke="#6D97AB" id="svg_70" height="18.99983" width="82.99927" y="152.10485" x="299.35919" stroke-width="1.5" fill="#9ACEE6"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_71" y="165.60472" x="301.8906" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFAFCC" fill="#000000">Local DB</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="9" id="svg_72" y="160.05198" x="356.49763" stroke-width="0" stroke="#619E73" fill="#000000">undo</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="9" id="svg_73" y="167.54888" x="356.49763" stroke-width="0" stroke="#619E73" fill="#000000">op</text>
+  <line stroke="#482816" stroke-linecap="null" stroke-linejoin="null" id="svg_74" y2="183.65427" x2="320.359" y1="172.65436" x1="320.359" stroke-width="1.5" fill="none"/>
+  <ellipse ry="5.24995" rx="8.49993" id="svg_75" cy="190.40421" cx="320.359" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#482816" fill="none"/>
+  <text font-style="italic" stroke-dasharray="5,5" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="9" id="svg_77" y="217.68434" x="185.00622" stroke-width="0" stroke="#DDDDDD" fill="#000000">Update remote DB</text>
+  <text style="cursor: move;" font-style="italic" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="9" id="svg_79" y="291.71615" x="80.51828" stroke-width="0" stroke="#DDDDDD" fill="#000000">Optimistic op</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_80" y="270.63115" x="167.2011" stroke-dasharray="5,5" stroke-width="0" stroke="#FFAFCC" fill="#000000">Principle of CRUD operations in</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_81" y="287.49915" x="166.73254" stroke-dasharray="5,5" stroke-width="0" stroke="#FFAFCC" fill="#000000">FeathersJS Offline-first own-data/own-net</text>
+  <line stroke="#619E73" stroke-linecap="null" stroke-linejoin="null" id="svg_22" y2="46.22748" x2="187.28004" y1="46.22748" x1="145.50048" stroke-dasharray="5,5" stroke-width="1.5" fill="none"/>
+ </g>
+</svg>
