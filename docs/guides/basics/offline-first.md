@@ -8,7 +8,7 @@ First we have to import the necessary wrappers; one for the client and one for t
 We need to add a couple of lines to `app/app.js`. First we show how to use the `own-data` wrapper:
 ``` js{2,5}
 // ...
-import { owndataWrapper } from '@feathersjs-offline/owndata';
+import { owndataWrapper } from '@feathersjs-offline/client';
 // ...
 app.use('messages');
 owndataWrapper(app, 'messages'); // Wrap the service; use the own-data principle
@@ -16,7 +16,7 @@ owndataWrapper(app, 'messages'); // Wrap the service; use the own-data principle
 Next, this is how you use the `own-net` wrapper:
 ``` js{2,5}
 // ...
-import { ownnetWrapper } from '@feathersjs-offline/ownnet';
+import { ownnetWrapper } from '@feathersjs-offline/client';
 // ...
 app.use('messages');
 ownnetWrapper(app, 'messages'); // Wrap the service; use the own-net principle
